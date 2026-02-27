@@ -3,10 +3,17 @@
 <head>
     <title>Combinators</title>
     <style>
-        
+        /*descendant combinators*/
+        span div {color:  orange}
+        /*child combinators*/
+        span > div {font-size: large}
+        /*adjacent sibling combinators*/
+        span div + div {color:red}
+        /*general sibling combinators*/
+        span div ~ div {background-color:yellow}
     </style>
 </head>
-
+ 
 <body>
     <span>
         <div>First</div>
